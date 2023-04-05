@@ -7,7 +7,7 @@ def test_process_function():
     with tempfile.TemporaryDirectory() as tmpdir:
         # create a test PowerPoint presentation file with three slides, each with one image
         test_file = os.path.join(tmpdir, "test.pptx")
-        prs = Presentation()
+        presentation = Presentation()
         for i in range(3):
             slide = prs.slides.add_slide(prs.slide_layouts[0])
             slide.shapes.add_picture("test_image.jpg", 0, 0)
