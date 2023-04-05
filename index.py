@@ -20,7 +20,7 @@ def generateScripts(slides):
     for slide in slides:
         # create the prompt, substring with regex for remove S1: S2: notation
         promptForGPT = "Write a presentation script->\\n" + \
-            re.sub('S\d:', '', slide)
+            re.sub('S:', '', slide)
         # call openai for completion
         completion = openai.Completion.create(
             engine="text-davinci-003",
