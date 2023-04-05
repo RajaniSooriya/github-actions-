@@ -36,6 +36,7 @@ jobs:
         python -m pip install pillow
         python -m pip install python_pptx
         python -m pip install tensorflow
+        python -m pip install re
 
         
 
