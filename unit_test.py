@@ -1,6 +1,6 @@
 import os
 import tempfile
-from ppextractmodule import process
+from ppextractmodule import presentation
 
 def test_process_function():
     # create a temporary directory to store extracted images
